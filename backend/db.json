@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "title": "Comfortable bed in good condition",
+      "price": 520,
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmVkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "id": 1
+    },
+    {
+      "title": "Adidas soccer boots for sale",
+      "price": 170,
+      "image": "https://images.unsplash.com/photo-1612387049695-637b743f80ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=339&q=80",
+      "id": 2
+    },
+    {
+      "title": "HD Camera",
+      "price": 430,
+      "image": "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNhbWVyYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "id": 3
+    },
+    {
+      "title": "Couch in great condition",
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "id": 4
+    },
+    {
+      "title": "4K Ultra HD Television",
+      "price": 2000,
+      "image": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHRlbGV2aXNpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "id": 5
+    },
+    {
+      "title": "Nike Air Jordan",
+      "price": 100,
+      "image": "https://images.unsplash.com/photo-1622831619806-ac62c4862163?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fG5pa2UlMjBzbmVha2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "id": 6
+    },
+    {
+      "title": "Red jacket for sale",
+      "price": 70,
+      "image": "https://images.unsplash.com/photo-1576028907634-3e79b4d29a5e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwamFja2V0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "id": 7
+    },
+    {
+      "title": "Chilled Fresh yo",
+      "price": "10",
+      "description": "Very chilled fresh yo",
+      "category": {
+        "label": "Other",
+        "value": 9,
+        "icon": "state-machine",
+        "backgroundColor": "#588bae"
+      },
+      "images": [
+        "file:///data/user/0/com.donewithit/cache/rn_image_picker_lib_temp_5c72e84d-ab85-4b89-9931-e3279c46b8dc.jpg"
+      ],
+      "id": 8
+    },
+    {
+      "title": "Screenshot",
+      "price": "20",
+      "description": "",
+      "category": {
+        "label": "Other",
+        "value": 9,
+        "icon": "state-machine",
+        "backgroundColor": "#588bae"
+      },
+      "images": [
+        "file:///data/user/0/com.donewithit/cache/rn_image_picker_lib_temp_06ae1d84-b109-4017-a0fc-f54142530439.png"
+      ],
+      "id": 9
+    }
+  ]
+}

@@ -1,12 +1,19 @@
+import "react-native-gesture-handler";
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
-import ListingEditScreen from "./src/screens/ListingEditScreen";
+import AppNavigator from "./src/navigations/AppNavigator";
+import navigationTheme from "./src/navigations/navigationTheme";
+import { StatusBar } from "react-native";
+import Colors from "./src/config/Colors";
 
 const App = () => {
-	return <ListingEditScreen />;
+	return (
+		<NavigationContainer theme={navigationTheme}>
+			<StatusBar backgroundColor={Colors.light} barStyle="dark-content" />
+			<AppNavigator />
+		</NavigationContainer>
+	);
 };
 
 export default App;
-
-const styles = StyleSheet.create({});

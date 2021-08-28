@@ -1,25 +1,31 @@
-import { useEffect, useState } from "react";
-import * as Location from "expo-location";
+import React, { useEffect, useState } from "react";
+import * as Permissions from "expo-permissions";
+import Location from "@react-native-community/geolocation";
 
 export default useLocation = () => {
-  const [location, setLocation] = useState();
+	const [location, setLocation] = useState();
 
-  const getLocation = async () => {
-    try {
-      const { granted } = await Location.requestPermissionsAsync();
-      if (!granted) return;
-      const {
-        coords: { latitude, longitude },
-      } = await Location.getLastKnownPositionAsync();
-      setLocation({ latitude, longitude });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+	const getLocation = async () => {
+		try {
+			const { granted } = await Permissions.askAsync(
+				Permissions.LOCATION_FOREGROUND
+			);
+			if (!granted) return;
 
-  useEffect(() => {
-    getLocation();
-  }, []);
+			const result = Location.getCurrentPosition(position => {
+				const latitude = position.coords.latitude;
+				const longitude = position.coords.longitude;
 
-  return location;
+				setLocation({ latitude, longitude });
+			});
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
+	useEffect(() => {
+		getLocation();
+	}, []);
+
+	return location;
 };
